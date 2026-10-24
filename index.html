@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#10271f">
+  <meta name="description" content="Explore Himachal Pradesh, Manali and custom mountain holidays with Take A Trip. Enquire on WhatsApp.">
+  <title>Take A Trip | Find Your Wild</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="announcement">HIMACHAL • MANALI • CUSTOM ADVENTURES <span>Plan your next escape</span></div>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Take A Trip home">
+      <span class="brand-mark">⌁</span><span><strong>TAKE A TRIP</strong><small>FIND YOUR WILD</small></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    <nav id="nav">
+      <a href="#packages">Packages</a><a href="#gallery">Gallery</a><a href="#services">Hotels & Cabs</a><a href="#reviews">Reviews</a>
+      <a class="nav-cta" href="#plan">Plan a trip ↗</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-image" role="img" aria-label="Himalayan mountain landscape"></div>
+      <div class="hero-shade"></div>
+      <div class="hero-content">
+        <span class="eyebrow"><span class="dot"></span> ADVENTURE STARTS HERE</span>
+        <h1>Mountains are calling.<br><em>Let's take a trip.</em></h1>
+        <p>Discover mountain escapes, unforgettable road trips, and journeys made just for you.</p>
+        <div class="hero-actions"><a class="button button-lime" href="#packages">Explore packages <span>↓</span></a><a class="button button-glass" href="#plan">Build my trip ↗</a></div>
+        <div class="hero-foot"><span>✦ HIMACHAL</span><span>✦ MANALI</span><span>✦ YOUR NEXT ADVENTURE</span></div>
+      </div>
+      <div class="hero-stamp"><span>YOUR</span><strong>WILD</strong><span>AWAITS</span></div>
+    </section>
+
+    <section class="quick-plan section-wrap" id="plan">
+      <div class="section-kicker">START EXPLORING</div>
+      <div class="quick-plan-head"><h2>Find your next escape</h2><p>Tell us a little about your trip. We'll help you plan the rest.</p></div>
+      <form id="planForm" class="plan-grid">
+        <label>Destination<select id="destination" name="destination"><option>Manali</option><option>Himachal Pradesh</option><option>Custom package</option></select></label>
+        <label>Travel date<input id="travelDate" name="travelDate" type="date"></label>
+        <label>Travellers<select id="travellers" name="travellers"><option>1 traveller</option><option selected>2 travellers</option><option>3 travellers</option><option>4 travellers</option><option>5+ travellers</option></select></label>
+        <label>Trip duration<select id="duration" name="duration"><option>2 nights</option><option>3 nights</option><option selected>4 nights</option><option>5 nights</option><option>7+ nights</option></select></label>
+        <button class="button button-dark plan-submit" type="submit">Continue on WhatsApp <span>↗</span></button>
+      </form>
+      <p class="tiny-note">This sends an enquiry only. Your trip is confirmed after availability and price are agreed with Take A Trip.</p>
+    </section>
+
+    <section class="section-wrap packages-section" id="packages">
+      <div class="section-heading"><div><div class="section-kicker">HANDPICKED FOR YOU</div><h2>Choose your kind of wild.</h2></div><p>From peaceful mountain mornings to road trips through the clouds, your next story starts here.</p></div>
+      <div class="filter-row" role="group" aria-label="Filter packages">
+        <button class="filter active" data-filter="all">All trips</button><button class="filter" data-filter="manali">Manali</button><button class="filter" data-filter="himachal">Himachal</button><button class="filter" data-filter="custom">Custom</button>
+      </div>
+      <div class="package-grid">
+        <article class="package-card" data-category="manali">
+          <div class="card-image manali-image"><span class="image-tag">POPULAR ESCAPE</span><span class="image-number">01 / 03</span></div>
+          <div class="package-body"><div class="package-meta"><span>⏱ 4 nights · 5 days</span><span>🏔 Mountain views</span></div><h3>Manali Mountain Escape</h3><p>Explore Manali, enjoy Himalayan scenery, and plan local sightseeing around your pace.</p><div class="card-bottom"><div><small>PACKAGE PRICE</small><strong>Get a quote</strong></div><button class="text-button book-package" data-package="Manali Mountain Escape">Enquire ↗</button></div></div>
+        </article>
+        <article class="package-card" data-category="himachal">
+          <div class="card-image himachal-image"><span class="image-tag">NATURE & CULTURE</span><span class="image-number">02 / 03</span></div>
+          <div class="package-body"><div class="package-meta"><span>⏱ Flexible duration</span><span>🌲 Scenic escapes</span></div><h3>Himachal Explorer</h3><p>Discover beautiful hill towns, pine forests, local experiences and peaceful landscapes.</p><div class="card-bottom"><div><small>PACKAGE PRICE</small><strong>Get a quote</strong></div><button class="text-button book-package" data-package="Himachal Explorer">Enquire ↗</button></div></div>
+        </article>
+        <article class="package-card" data-category="custom">
+          <div class="card-image custom-image"><span class="image-tag">MADE FOR YOU</span><span class="image-number">03 / 03</span></div>
+          <div class="package-body"><div class="package-meta"><span>⏱ Your dates</span><span>🧭 Your route</span></div><h3>Your Trip, Your Rules</h3><p>Choose destinations, hotels, cabs and experiences. We'll help shape a trip around you.</p><div class="card-bottom"><div><small>PACKAGE PRICE</small><strong>Build your trip</strong></div><button class="text-button book-package" data-package="Custom Trip Planning">Plan it ↗</button></div></div>
+        </article>
+      </div>
+      <p class="tiny-note">Package names and descriptions are starter content. Add confirmed inclusions, exclusions, prices and cancellation terms before publishing.</p>
+    </section>
+
+    <section class="gallery-section" id="gallery">
+      <div class="section-wrap">
+        <div class="section-heading light-heading"><div><div class="section-kicker">A LITTLE INSPIRATION</div><h2>Views worth the journey.</h2></div><p>Big skies, winding roads and mountain moments. Imagine where you'll go next.</p></div>
+        <div class="gallery-grid">
+          <div class="gallery-tile gallery-one"><span>01 — HIMALAYAN VIEWS</span></div>
+          <div class="gallery-tile gallery-two"><span>02 — THE OPEN ROAD</span></div>
+          <div class="gallery-tile gallery-three"><span>03 — SLOW MOUNTAIN MORNINGS</span></div>
+          <div class="gallery-tile gallery-four"><span>04 — FIND YOUR TRAIL</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="services-section section-wrap" id="services">
+      <div class="section-heading"><div><div class="section-kicker">MORE THAN A PACKAGE</div><h2>Let's sort the details.</h2></div><p>Need a place to stay or a ride through the hills? Send us your requirements and we'll follow up.</p></div>
+      <div class="service-grid">
+        <article class="service-card"><div class="service-icon">⌂</div><h3>Hotel enquiries</h3><p>Tell us your destination, dates, room preferences and budget.</p><button class="button button-outline service-enquiry" data-service="Hotel booking enquiry">Find a stay ↗</button></article>
+        <article class="service-card"><div class="service-icon">↗</div><h3>Cab & transfers</h3><p>Ask about airport or station pickups, local sightseeing and outstation cabs.</p><button class="button button-outline service-enquiry" data-service="Cab and transfer enquiry">Arrange a ride ↗</button></article>
+        <article class="service-card service-card-dark"><div class="service-icon">✳</div><h3>Custom itinerary</h3><p>Share your group size, dates and must-see places. Let's build it together.</p><button class="button button-lime service-enquiry" data-service="Custom itinerary enquiry">Build my trip ↗</button></article>
+      </div>
+    </section>
+
+    <section class="review-section" id="reviews">
+      <div class="section-wrap review-inner">
+        <div><div class="section-kicker">TRAVEL STORIES</div><h2>Good trips leave<br>great memories.</h2><p>Have travelled with Take A Trip? We'd love to hear about it.</p><button class="button button-dark" id="reviewButton">Share your feedback ↗</button></div>
+        <div class="review-panel"><div class="quote-mark">“</div><h3>Your experience could be featured here.</h3><p>We only publish genuine customer feedback with permission. Be one of the first to share your Take A Trip story.</p><span class="review-note">CUSTOMER REVIEWS COMING SOON</span></div>
+      </div>
+    </section>
+
+    <section class="final-cta">
+      <div class="section-wrap final-cta-inner"><div><div class="section-kicker">READY WHEN YOU ARE</div><h2>Your next adventure<br>is one message away.</h2><p>Tell us what you're dreaming of. We'll help you take the first step.</p></div><a class="button button-lime" id="footerWhatsApp" href="#" target="_blank" rel="noopener">Chat with us on WhatsApp ↗</a></div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><a class="brand footer-brand" href="#home"><span class="brand-mark">⌁</span><span><strong>TAKE A TRIP</strong><small>FIND YOUR WILD</small></span></a><div>Himachal Pradesh · Manali · Custom trips</div><div class="footer-links"><a href="#packages">Packages</a><a href="#services">Hotels & Cabs</a><a href="#plan">Enquire</a></div><small>© <span id="year"></span> Take A Trip. All journeys start with a plan.</small></footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
